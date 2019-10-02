@@ -28,7 +28,7 @@ document.getElementById("length").innerHTML = "Length: 10";
 //function to set length to slider position
 document.getElementById("slider").oninput = function(){
 
-    var sliderValue = document.getElementById("slider").value -1;
+    var sliderValue = document.getElementById("slider").value;
 
     if(document.getElementById("slider").value > 0){
     document.getElementById("length").innerHTML = "Length: " + sliderValue;
