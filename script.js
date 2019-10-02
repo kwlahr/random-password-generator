@@ -27,6 +27,7 @@ document.getElementById("length").innerHTML = "Length: 10";
 
 //function to set length to slider position
 document.getElementById("slider").oninput = function(){
+
     var sliderValue = document.getElementById("slider").value -1;
 
     if(document.getElementById("slider").value > 0){
@@ -39,3 +40,11 @@ document.getElementById("slider").oninput = function(){
 }
 
 //copy to clipboard function
+function copyPassword(){
+
+    document.getElementById("display").select();
+
+    document.execCommand("Copy");
+
+    alert("Password copied to clipboard!");
+}
